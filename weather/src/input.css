@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'sans';
+    src: local('Genral Sans ');
+    font-weight: normal;
+    font-style: normal;
+}

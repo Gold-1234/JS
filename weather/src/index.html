@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2376077cf.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+     <!-- <script src="image.js"></script> -->
+     
+</head>
+<body class="bg-gray-900 min-h-screen font-mono text-white">
+    <div id="main" class="h-full flex flex-col items-center justify-center">
+        
+        <div id="nav" class="w-full flex justify-between p-10">
+            <a href="#" class="text-white font-extrabold text-2xl">Weather</a>
+            <div id="input-sec" class="w-48 flex relative">
+                <input id="input" type="text" class="rounded-full w-48 text-black">
+                <i id="search" class="fa-solid fa-magnifying-glass text-black -ml-6 my-2"></i>
+            </div>
+        </div>
+
+        <p id="error" class="bg-red-700 rounded-lg"></p>
+
+         
+         
+
+        <div id="weather-info" class="bg-slate-600 w-3/5 h-3/5 rounded-xl  flex">
+            <div id="images" class="w-1/2"></div>
+            <div class="flex flex-col items-center justify-center w-1/2"> 
+            <div id="weather" class="text-4xl font-bold mt-20 text-center flex flex-col gap-10">
+                <div id="city"></div>
+                <div id="temp"></div>
+                <div id="feel"></div>
+            </div>
+            <div id="details" class="flex flex-row justify-between items-center my-16 mx-10 gap-8">
+                <div  class="flex flex-col items-center justify-center">
+                    <img src="./sunrise.png" class="h-20">
+                    <p>Sunrise</p>
+                    <p id="sunrise"></p>
+                    
+                </div>
+                <div  class="flex flex-col items-center justify-center">
+                    <img src="./humidity.png" class="h-16 mb-4">
+                    <p>Humidity</p>
+                    <p id="humidity"></p>
+                </div>
+                <div  class="flex flex-col items-center justify-center">
+                    <img src="./sunset.png" class="h-20">
+                    <p>Sunset</p>
+                    <p id="sunset"></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        
+        
+    </div>
+</body>
+</html>
